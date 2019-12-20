@@ -35,8 +35,8 @@ DVFS_states              = [str(float(_.decode())/1e6) + "GHz" for _ in subproce
 num_DVFS_states          = len(DVFS_states) - 1
 
 # Twig dir to the system path.
-self.current_path = os.path.dirname(os.path.abspath(__file__)) + "/Twig"
-sys.path.insert(0, self.current_path)
+current_path = os.path.dirname(os.path.abspath(__file__)) + "/Twig"
+sys.path.insert(0, current_path)
 
 EVENTS = ['UNHALTED_CORE_CYCLES', 'INSTRUCTION_RETIRED', 'UNHALTED_REFERENCE_CYCLES', \
         'LLC_MISSES', 'BRANCH_INSTRUCTIONS_RETIRED', 'MISPREDICTED_BRANCH_RETIRED', \
