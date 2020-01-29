@@ -40,7 +40,7 @@ class Scheduler:
     def __init__(self, lc_workload_name=None, lc_target=None, lc_PPID=None, current_DVFS=None):
         self.lc_workload_name = lc_workload_name
         self.lc_target = lc_target
-        self.lc_ppid = PPID
+        self.lc_ppid = lc_PPID
         self.LC_WORKLOAD_CHILD_PIDS = list()
         self.LC_WORKLOAD_CHILD_MAP = list()
         self.current_mapping = list()
